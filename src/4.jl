@@ -45,7 +45,7 @@ actual_polynomial = poly(actual_zeros)
 
 
 for i = 1:20
-    println("P(z",i,") = ", polynomial(i))
-    println("p(z",i,") = ", actual_polynomial(i))
+    println("P(z",i,") = ", polynomial(zeros[20-i+1]))
+    println("p(z",i,") = ", actual_polynomial(zeros[20-i+1]))
     println("zk - k = ", abs(zeros[20-i+1] - i))
 end
